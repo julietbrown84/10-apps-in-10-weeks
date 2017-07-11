@@ -13,3 +13,16 @@
 - Compare to each other - pros/cons of each one.
 - Why they are used, what for..
 - Ones I would like to further use in the future... 
+
+
+Frameworks/Libraries I will be exploring:
+
+- vue.js
+- react
+- backbone
+- tween.js
+- three.js
+- angular
+- d3js
+- choreographer.js
+- anime.js
