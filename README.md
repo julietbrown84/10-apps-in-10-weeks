@@ -17,6 +17,7 @@
 
 Frameworks/Libraries I will be exploring:
 
+- jquery
 - vue.js
 - react
 - backbone
