@@ -7,7 +7,7 @@
  Required: 
  - set up 
  - build chains
- -gulp/grun ect..
+ -gulp/grunt ect..
  
  Objective: 
 - Compare to each other - pros/cons of each one.
