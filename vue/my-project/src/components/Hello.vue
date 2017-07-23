@@ -1,19 +1,37 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-  </div>
+<div class="hello" :style="{ backgroundColor: `hsl(${x}, 80%, 50%)` }" @mousemove="xCoordinate">
+  <p><button @click="increment">+</button> {{ counter }} <button @click="decrement">-</button></p>
+  <p>Pixels across: {{ x }}</p>
+  <h3>Type here:</h3>
+  <textarea v-model="message" class="message" rows="5" maxlength="72"></textarea><br>
+  <p class="booktext">{{ message }} </p>
+  <child :text="message"></child>
+  <child :text="message"></child>
+</div>
 </template>
-
 <script>
 export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Hello world'
+      counter: 0,
+      x: 0,
+      message: 'This is a good place to type things.'
+    }
+  },
+  methods: {
+    increment () {
+      this.counter++
+    },
+    decrement () {
+      this.counter--
+    },
+    xCoordinate (e) {
+      this.x = e.clientX
     }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
