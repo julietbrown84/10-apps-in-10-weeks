@@ -5,13 +5,17 @@
   <h3>Type here:</h3>
   <textarea v-model="message" class="message" rows="5" maxlength="72"></textarea><br>
   <p class="booktext">{{ message }} </p>
-  <child :text="message"></child>
-  <child :text="message"></child>
+  <test></test>
 </div>
 </template>
 <script>
+import Test from './Test'
+
 export default {
   name: 'hello',
+  components: {
+    Test
+  },
   data () {
     return {
       counter: 0,

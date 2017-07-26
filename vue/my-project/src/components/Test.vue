@@ -1,23 +1,16 @@
 <template>
 <div class="test" >
-  	<component :is="selected">
-        <svg class="winebottle" aria-labelledby="title" xmlns="http://www.w3.org/2000/svg" viewBox="0 155 140 300">
-          ...
-      	</svg>
-    </component>
+  {{ message }}
 </div>
 </template>
 <script>
-import New from 'Test.vue';
+// import New from 'Test.vue';
 export default {
   name: 'test',
   data () {
     return {
       message: 'test view'
-    },
-    components: {
-    	appNew: New
-  	}
+    }
   }
 }
 </script>
