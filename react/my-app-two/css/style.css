@@ -1,0 +1,13 @@
+.squares {
+  float: left;
+  width: 14vw;
+  height: 10.5vw;
+  margin-left: 0.58333vw;
+  margin-top: 7vw;
+  background-color: orangered;
+}
+
+.scene {
+  margin: 20px auto;
+  display: table;
+}

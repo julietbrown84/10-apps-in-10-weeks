@@ -1,0 +1,15 @@
+$i : 3.5vw; 
+
+.squares {
+  float: left;
+  width: $i*4;
+  height: $i*3;
+  margin-left: $i/6;
+  margin-top: $i*2;
+  background-color: orangered;
+}
+
+.scene {
+  margin: 20px auto;
+  display: table;
+}
