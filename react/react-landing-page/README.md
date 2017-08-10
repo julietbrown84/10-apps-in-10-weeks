@@ -1,5 +1,15 @@
 Setup: 
+
+To run: 
+ npm start
+
+Go to 
+ http://localhost:8080/
+
 Learnings;
+
+https://leanpub.com/reactjsforthevisuallearner/read#leanpub-auto-chapter-3--building-our-houses
+
 
 - App
  2 
