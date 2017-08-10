@@ -2,7 +2,7 @@
  import ReactDOM from 'react-dom';
  import { Container, Row, Col } from 'react-grid-system';
  
- class Header extends React.Component {
+ class SectionA extends React.Component {
  	render() {
 	 	return (
 	  		<section className="section-a">
@@ -16,3 +16,5 @@
         )
     }
 }
+
+module.exports = SectionA;
