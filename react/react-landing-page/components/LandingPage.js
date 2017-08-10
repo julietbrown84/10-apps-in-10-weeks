@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Container, Row, Col } from 'react-grid-system';
 
 import Header from './village/neighbourhoods/Header.js';
+import SectionA from './village/neighbourhoods/SectionA.js';
 
 class LandingPage extends React.Component {
   render() {
@@ -11,9 +12,9 @@ class LandingPage extends React.Component {
       test
        
         <Header />
+        <SectionA />
        
-      
-
+     
       </div>
     )
   }

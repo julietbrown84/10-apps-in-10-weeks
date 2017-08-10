@@ -2,7 +2,6 @@
  import ReactDOM from 'react-dom';
  import { Container, Row, Col } from 'react-grid-system';
 
- import Slider from './blocks/SliderSlick.js';
  import Navigation from './blocks/Navigation.js';
  import CallToAction from './blocks/CallToAction.js';
 
@@ -12,7 +11,21 @@
 	  		<section className="header">
 	              <Container>
                   <Row>
-                    <Slider />
+                  <div className="header__container">
+                      <div className="main-navigation container">
+                        <i className="icon icon--logo" />
+              
+                      </div>
+
+                      <div className="logo">
+                        <div className="logo-canvas">
+                      </div>
+
+                    </div>
+                  </div>
+                  </Row>
+                  <Row>
+                  
                   </Row>
 	              	<Row>
                  		<Navigation />

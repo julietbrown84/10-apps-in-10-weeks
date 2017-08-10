@@ -3,6 +3,8 @@
  import Slider from 'react-slick';
  import { Container, Row, Col } from 'react-grid-system';
 
+ import Canvas from './houses/Canvas.js';
+ 
  class SliderSlick extends React.Component {
   render() {
     var settings = {
@@ -11,12 +13,11 @@
     };
 
     return (
-      <div className='container'>
+      <div className='slider-slick-container'>
         <Slider {...settings}>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
+          <div>
+            <Canvas />
+          </div>
         </Slider>
       </div>
     );

@@ -2,14 +2,15 @@
  import ReactDOM from 'react-dom';
  import { Container, Row, Col } from 'react-grid-system';
  
+ import Slider from './blocks/SliderSlick.js';
+
  class SectionA extends React.Component {
  	render() {
 	 	return (
 	  		<section className="section-a">
 	              <Container>
 	              	<Row>
-                 		<SectionDescription/>
-              		  <Laptop/>
+                 	<Slider />
               		</Row>
 	             </Container>
 	        </section>
