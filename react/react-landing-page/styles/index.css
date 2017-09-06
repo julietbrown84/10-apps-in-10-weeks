@@ -2,10 +2,6 @@
 @import "~slick-carousel/slick/slick-theme.css";
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 
-body {
-	background: red;
-}
-
 .slider-slick-container {
   margin: 0 auto;
   padding: 40px;
@@ -13,4 +9,217 @@ body {
   height: 400px;
   color: #333;
   background: #419be0;
+}
+
+
+.header.container {
+    width: 100%;
+   /* margin: 0 auto;
+    padding: 4rem;
+    padding-top: 2rem;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    //display: flex;
+    border: 1px solid #D3D3D3;
+  
+}
+
+.header-navigation {
+  float: right;
+  margin-top: 10px;
+}
+
+.header-nav-list {
+  display: inline-flex;
+  list-style: none
+}
+
+.list {
+  padding: 10px;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+// header logo
+.logo {
+  /*float: right;*/
+}
+
+.logo {
+  margin-top: 10px;
+  float: right;
+}
+
+.main-navigation .icon {
+    /*float: right;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99999999;*/
+}
+
+.title-name{
+	font-size: 180px;
+}
+
+.section-a {
+  padding: 10px;
+
+}
+
+.section-b {
+  background-color: #00FA9A;
+}
+
+.icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  line-height: 24px;
+  height: 120px;
+  margin-bottom: 20px;
+  width: 24px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.footer .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem 0 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    //display: flex;
+    border: 1px solid #D3D3D3;
+}
+
+.footer .text {
+  float: right;
+  display: inline;
+}
+
+.icon--twiter {
+    background-image: url("../image/icon/.svg");
+    float: right;
+    height: 150px;
+    width: 285px;
+}
+
+.icon--footer-email {
+    background-image: url("../image/icon/email.svg");
+    float: right;
+    height: 150px;
+    width: 285px;
+}
+
+.logo--julietbrown {
+    background-image: url("../image/icon/logo-juliet-brown.svg");
+    height: 300px;
+    width: 600px;
+    margin-top: 160px;
+}
+
+// note make github, codepen and instagram\
+.icon--facebook {
+    background-image: url("../image/icon/facebook.svg");
+    float: right;
+    height: 150px;
+    width: 285px;
+}
+
+.icon--logo {
+    background-image: url("../image/icon/cat-logo.svg");
+    float: right;
+    height: 150px;
+    width: 285px;
+}
+
+.icon--hamburger {
+    background-image: url("../image/icon/hamburger.svg");
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.icon--close {
+	 background-image: url("../image/icon/close.svg");
+    float: right;
+    height: 25px;
+    width: 25px;
+}
+
+
+nav {
+  background-color: #00F;
+  overflow: hidden;
+  padding: 1em;
+
+  a {
+    color: #FFF;
+  }
+
+  a:visited {
+    color: #FFF;
+  }
+
+  border-bottom: 1px solid #000;
+
+  .navWide {
+    display: none;
+    margin: 0 auto;
+  }
+
+    .wideDiv {
+      text-align: center;
+
+     
+    }
+
+   a {
+        text-decoration: none;
+        display: inline-block;
+        // Adjust padding to increase/decrease the space between links.
+        padding: 0 2em;
+      }
+        i {
+      float: left;
+      cursor: pointer;
+      color: #FFF;
+    }
+    .narrowLinks {
+      display: none;
+
+      a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        clear: left;
+        padding: 0.5em 0;
+      }
+    }
+
+  .navNarrow {
+
+
+    
+  }
+}
+
+// Adjust breakpoint as desired to select when the "hamburger" menu is
+// replaced by just the links.
+@media (min-width: 480px) {
+  
+  nav {
+
+    .navWide {
+      display: block;
+    }
+
+    .navNarrow {
+      display: none;
+    }
+  }
 }

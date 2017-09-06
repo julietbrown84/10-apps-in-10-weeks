@@ -10,10 +10,7 @@
  	render() {
 	 	return (
 	  		<Col lg={12}>
-	  			call to action test
-	  			<Title />	
-	  			<SubTitle />
-	  			<Button />
+	  	
 	  		 </Col>
         )
     }

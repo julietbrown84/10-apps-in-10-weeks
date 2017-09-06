@@ -2,17 +2,28 @@
  import ReactDOM from 'react-dom';
  import { Container, Row, Col } from 'react-grid-system';
  
- import Slider from './blocks/SliderSlick.js';
+ import HeaderNavigation from './blocks/houses/HeaderNavigation.js';
+ import Title from './blocks/houses/Title.js';
+ import Canvas from './blocks/houses/Canvas.js';
+ import SubTitle from './blocks/houses/SubTitle.js';
+
 
  class SectionA extends React.Component {
  	render() {
 	 	return (
 	  		<section className="section-a">
-	              <Container>
 	              	<Row>
-                 	<Slider />
+	              	    <Col lg={8}>
+                 	    <Title/>
+                 	    </Col>
+                 	    <Col lg={4}>
+                 	    <Canvas/>
+			            <SubTitle/>
+			          	</Col>
               		</Row>
-	             </Container>
+              		  <div>
+			        </div>
+	   
 	        </section>
         )
     }

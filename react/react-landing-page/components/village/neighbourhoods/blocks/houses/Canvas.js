@@ -5,7 +5,8 @@ class Canvas extends React.Component {
   render() {
     return (
       <div>
-	 		<img src='http://placekitten.com/g/400/200' />
+      	svg animation
+	 		<img src='http://placekitten.com/g/800/400' />
       </div>
     )
   }

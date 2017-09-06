@@ -4,36 +4,39 @@
 
  import Navigation from './blocks/Navigation.js';
  import CallToAction from './blocks/CallToAction.js';
+ import HeaderNavigation from './blocks/houses/HeaderNavigation.js';
+ import Logo from './blocks/houses/Logo.js';
 
  class Header extends React.Component {
  	render() {
 	 	return (
 	  		<section className="header">
-	              <Container>
                   <Row>
-                  <div className="header__container">
-                      <div className="main-navigation container">
-                        <i className="icon icon--logo" />
+                  <div className="header container">
+                
+                    <Col sm={6}>
+                          <div className="main-navigation container">
+                              <i className="icon icon--hamburger"></i>
+                              <Navigation/>
+                        </div>
+                      </Col>
+
+                      <Col sm={5}>
+                        <div className="header-navigation">
+                          <HeaderNavigation/>
+                        </div>
+                      </Col>
+
+                      <Col sm={1}>
+                                          
+                        <Logo/>
+
+                      </Col>
               
-                      </div>
-
-                      <div className="logo">
-                        <div className="logo-canvas">
-                      </div>
-
-                    </div>
                   </div>
                   </Row>
-                  <Row>
-                  
-                  </Row>
-	              	<Row>
-                 		<Navigation />
-              		</Row>
-              		<Row>
-                    <CallToAction />
-              		</Row>
-	             </Container>
+           
+              	
 	        </section>
         )
     }
