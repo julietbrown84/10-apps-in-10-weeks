@@ -6,14 +6,15 @@
   margin: 0 auto;
   padding: 40px;
   width: 80%;
-  height: 400px;
+  height: 300px;
   color: #333;
-  background: #419be0;
+  background-color: #eeebe8;
 }
 
 
 .header.container {
     width: 100%;
+    height: 150px;
    /* margin: 0 auto;
     padding: 4rem;
     padding-top: 2rem;*/
@@ -21,7 +22,13 @@
     display: -ms-flexbox;
     //display: flex;
     border: 1px solid #D3D3D3;
-  
+}
+
+.projects {
+  position: absolute;
+  right: 0px;
+  color: white;
+  z-index: 10;
 }
 
 .header-navigation {
@@ -31,7 +38,13 @@
 
 .header-nav-list {
   display: inline-flex;
-  list-style: none
+  list-style: none;
+  margin-top: 55px;
+}
+
+.header-nav-projects {
+  margin-top: 55px;
+  list-style: none;
 }
 
 .list {
@@ -49,8 +62,7 @@
 }
 
 .logo {
-  margin-top: 10px;
-  float: right;
+  margin-top: 55px;
 }
 
 .main-navigation .icon {
@@ -115,8 +127,8 @@
 
 .logo--julietbrown {
     background-image: url("../image/icon/logo-juliet-brown.svg");
-    height: 300px;
-    width: 600px;
+    height: 100px;
+    width: 400px;
     margin-top: 160px;
 }
 

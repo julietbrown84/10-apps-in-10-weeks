@@ -16,7 +16,7 @@
       <div className='slider-slick-container'>
         <Slider {...settings}>
           <div>
-            <Canvas />
+   
           </div>
         </Slider>
       </div>

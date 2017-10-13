@@ -6,20 +6,33 @@
  	render() {
 	 	return (
 	  		<section className="footer">
-	                <Col sm={12}>
-	              	<Row>
-             		   <footer className="footer">
-			                <div className="footer container section-container">
-			                     <div className="footer__logo"></div>
-			          
-			                    <div className="icon icon--footer-email"></div>
-			                    <div className="icon icon--facebook"></div>
-			                    <div className="icon icon--twitter"></div>
-			                    <div className="footer text">JULIET BROWN 2017 ©<span className="red-dot">.</span></div>
-			                </div>  
-			            </footer>
-              		</Row>
-              		  </Col>
+	               <Row>
+               
+                    <Col sm={6}>
+                        <div>
+                            <ul className='footer-nav-projects'>
+                                 <li className="list"><a className="link" href="">ABOUT ME</a></li>
+                            </ul>
+                          </div>
+                      </Col>
+
+                        <Col sm={4}>                  
+                      		<div className='footer-title'>
+                                <li className="list"><a className="link" href="">JULIET BROWN</a></li>
+                                <li className="list"><a className="link" href="">Front end developer, artist,devloper</a></li>
+                            </div>
+                        </Col>
+
+                      <Col sm={2}>
+                        <div className="footer-navigation">
+                         	<ul className='footer-nav-projects'>
+                                <li className="list"><a className="link" href="">CONTACT</a></li>
+                            </ul>
+                        </div>
+                      </Col>
+
+               
+                  </Row>
 	        </section>
         )
     }

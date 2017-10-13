@@ -15,24 +15,22 @@
                   <div className="header container">
                 
                     <Col sm={6}>
-                          <div className="main-navigation container">
-                              <i className="icon icon--hamburger"></i>
-                              <Navigation/>
-                        </div>
+                        <div>
+                            <ul className='header-nav-projects'>
+                                 <li className="list"><a className="link" href="">PROJECTS</a></li>
+                            </ul>
+                          </div>
                       </Col>
+                        <Col sm={4}>                  
+                            <Logo/>
+                        </Col>
 
-                      <Col sm={5}>
+                      <Col sm={2}>
                         <div className="header-navigation">
                           <HeaderNavigation/>
                         </div>
                       </Col>
 
-                      <Col sm={1}>
-                                          
-                        <Logo/>
-
-                      </Col>
-              
                   </div>
                   </Row>
            

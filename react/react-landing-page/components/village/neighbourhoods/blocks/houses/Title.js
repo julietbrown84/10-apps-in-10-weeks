@@ -8,7 +8,7 @@ class Title extends React.Component {
         <div className="">
          <i className="icon logo--julietbrown"></i>
         </div>
-            have a saying here
+           Creative: Front end developer, web animator, designer and artist
       </div>
     )
   }
