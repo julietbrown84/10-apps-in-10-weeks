@@ -8,6 +8,10 @@ import Demo from './components/villages/Demo.js';
 import About from './components/villages/About.js';
 import Contact from './components/villages/Contact.js';
 
+// redux
+import { Provider } from 'react-redux';
+import { store } from './redux/redux';
+
 // Stylesheets
 import './styles/landing-page.scss';
 
@@ -28,6 +32,8 @@ class App extends React.Component {
 }
 
 ReactDOM.render(
-    <App/>,
+    <Provider store={store}>
+        <App/>
+    </Provider>,
     document.getElementById('app')
 );
