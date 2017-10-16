@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
     "firebase": "^4.0.0",
     "react": "^15.5.4",
     "react-addons-css-transition-group": "^15.6.2",
