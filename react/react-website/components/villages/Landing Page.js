@@ -30,12 +30,12 @@ class LandingPage extends React.Component {
             });
     }
 
-
   	render() {
       console.log(this.state.gifs);
     	return (
       		<div className="landing-page">
         		<Header messages={false} title={"Developer Bot for Slack"} subtitle={"One article to one random person in your Slack group. Once a day."}/>
+                <GifList data={this.state.gifs} />
         		<SectionA/>
         		<Footer/>
       		</div>

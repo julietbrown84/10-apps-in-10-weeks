@@ -1,5 +1,5 @@
 import React from 'react';
-import 	{ Grid, ListGroup, ListGroupItem} from 'react-bootstrap'
+import { Grid, ListGroup, ListGroupItem} from 'react-bootstrap'
 
 
 const Results  = () => (
