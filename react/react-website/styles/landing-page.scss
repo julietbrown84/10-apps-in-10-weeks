@@ -560,8 +560,14 @@ path {
         background-color: #fdf5ef;
 
         path {
-            stroke-width: 0.5;
+            stroke-width: 0.8;
         }
+    }
+
+    #button {
+        cursor: pointer;
+        position: relative;
+        z-index: 5000;
     }
 }
 
@@ -637,64 +643,11 @@ button {
 .guest-list {
   overflow: hidden;  
 }
-li {
-  font-size: 1.1em;
-  color: #fff;
-  border-bottom: dotted 1px rgba(255,255,255, .4);
-  padding: 1em .85em;
-  background: #74afe1;
-}
-li:last-child {
-  border: none;
-}
-li:hover button {
-  display: block;
-}
 
-@media (min-width: 768px) {
-  .container {
-    width: 50%;
-  }  
+// temporary to stop gif showing for now
+ul.gif-list {
+    display: none;
 }
-
-/* ================================= 
-    ReactCSSTransitionGroup Classes
-==================================== */
-
-/* start enter state */
-.slide-enter {
-  transform: translateX(-100%);
-}
-
-/* end enter state */
-.slide-enter.slide-enter-active {
-  transform: translateX(0);
-  transition: transform 0.5s ease-out;
-}
-
-/* start leave state */
-.slide-leave {
- transform: translateX(0);
-}
-
-/* end leave state */
-.slide-leave.slide-leave-active {
-  transform: translateX(100%);
-  opacity: 0;
-  transition: 0.5s ease-in;
-}
-
-/* initial mounting */
-.slide-appear {
-  opacity: 0;
-}
-
-.slide-appear.slide-appear-active {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
-}
-
-
 
 
 

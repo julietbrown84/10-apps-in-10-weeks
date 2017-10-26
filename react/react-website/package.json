@@ -12,8 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animated": "^0.2.0",
     "axios": "^0.16.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "firebase": "^4.0.0",
+    "gsap": "^1.20.3",
+    "jquery": "^3.2.1",
     "react": "^15.5.4",
     "react-addons-css-transition-group": "^15.6.2",
     "react-bootstrap": "^0.31.3",

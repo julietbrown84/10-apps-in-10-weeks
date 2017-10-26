@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GifList from './neighborhoods/GifList';
 import Header from './neighborhoods/Header.js';
 import Footer from './neighborhoods/Footer.js';
 import SectionB from './neighborhoods/Section B.js';

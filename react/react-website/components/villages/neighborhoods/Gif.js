@@ -6,4 +6,3 @@ const Gif = props => (
   </li>
 );
 
-export default Gif;
