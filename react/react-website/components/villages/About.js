@@ -48,6 +48,7 @@ class About extends React.Component {
     }
 
     componentDidMount() {
+        // TODO: refactor 
         const $this = $(ReactDOM.findDOMNode(this));
         const cog = $this.find("#cog");
         const cogTwo = $this.find("#windmill");
@@ -126,7 +127,7 @@ class About extends React.Component {
               transformOrigin: "50% 50%",
               ease: Expo.easeOut
             }, "begin")
-    
+
             return tl;
         }
 

@@ -37,7 +37,14 @@ class App extends React.Component {
                         </TransitionGroup>
                     )}/>
 
-                    <Route path="/contact" component={Contact}/>  
+                    <Route exact
+                            path="/contact"
+                            children={({ match, ...rest }) => (
+                        <TransitionGroup component={firstChild}>
+                          {match && <Contact {...rest} />}
+                        </TransitionGroup>
+                    )}/>
+  
                     <Route path="/demo/project" component={Demo}/> 
                 </div>
             </Router>

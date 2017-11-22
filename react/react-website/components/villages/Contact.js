@@ -3,24 +3,84 @@ import ReactDOM from 'react-dom';
 import Header from './neighborhoods/Header.js';
 import Footer from './neighborhoods/Footer.js';
 import { Container, Row, Col } from 'react-grid-system';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import * as Animated from "animated/lib/targets/react-dom";
 
 class Contact extends React.Component {
-    render() {
+    constructor(props) {
+        super(props);
+        this.state = {
+            animateLeft: new Animated.Value(0),
+            animateRight: new Animated.Value(0),
+        };
+    }
+
+    componentWillAppear(cb) {
+        Animated.spring(this.state.animateLeft, { toValue: 1 }).start();
+        Animated.spring(this.state.animateRight, { toValue: 1 }).start();
+        cb();
+    }
+
+    componentWillEnter(cb) {
+        setTimeout(
+            () => {
+                Animated.spring(this.state.animateLeft, { toValue: 1}).start();
+            },
+            500
+        );
+        setTimeout(
+            () => {
+                Animated.spring(this.state.animateRight, { toValue: 1}).start();
+            },
+            800
+        );
+        cb();
+    }
+
+    componentWillLeave(cb) {
+        Animated.spring(this.state.animateLeft, { toValue: 0 }).start();
+        Animated.spring(this.state.animateRight, { toValue: 0 }).start();
+        setTimeout(() => cb(), 400);
+    }
+
+   render() {
+        const leftStyle = {
+            opacity: Animated.template`${this.state.animateLeft}`,
+            transform: Animated.template`
+                translate3d(0,${this.state.animateLeft.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: ["12px", "0px"]
+                })},0)
+            `
+        };
+
+        const rightStyle = {
+            opacity: Animated.template`${this.state.animateRight}`,
+            transform: Animated.template`
+                translate3d(${this.state.animateRight.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: ["24px", "0px"]
+                })},0,0)
+            `
+        };
+
         return (
             <div className="contact">
                 <Header messages={true} title={"Chat Bot contact"} subtitle={"Watch how it works."}/>
 	    	        <div className="">
                         <div className="contact__container">
-                            <Col sm={6}>
-                                <div className="contact__block-one">
-                                    <div>
-                                        <img height="400px" className="article-cover" src="./images/home-page-image-one.jpg" /> 
+                            <Animated.div style={leftStyle}>
+                                <Col sm={6}>
+                                    <div className="contact__block-one">
+                                        <div>
+                                            <img height="400px" className="article-cover" src="./images/home-page-image-one.jpg" /> 
+                                        </div>
                                     </div>
-                                </div>
-                            </Col>
+                                </Col>
+                            </Animated.div>
 
                             <Col sm={6}>
+                              <Animated.div style={rightStyle}>
                                 <div className="contact__block-two">
                                     <div className="contact__title">Contact Page</div>
 
@@ -103,6 +163,7 @@ class Contact extends React.Component {
                                         </svg>
                                     </Link>
                                 </div>
+                              </Animated.div>
                             </Col>
                         </div>
 	    	         </div>
